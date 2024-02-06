@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "inherit", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+.Lower_outer_wrapper {
+  height: 40px;
+  display: flex;
+  gap: 15px;
+  justify-items: center;
+  background-color: #232f3e;
+  align-items: center;
+}
+
+.menu_rwapper {
+  display: flex;
+  align-items: center;
+}
+.menu_rwapper:hover {
+  border: 1px solid white;
+}
+.menu_rwapper a {
+  color: white;
+  text-decoration: none;
+}
+
+.lower_All_rwapper {
+  display: flex;
+}
+
+.Valentine_rwapper {
+  display: flex;
+}
+
+.Valentine_rwapper p {
+  color: white;
+  margin-right: 3px;
+  align-items: center;
+}
+.Valentine_rwapper:hover {
+  border: 1px solid white;
+}
+
+.Valentine_rwapper a {
+  text-decoration: none;
+}
+
+.Medical_rwapper {
+  display: flex;
+  align-items: center;
+}
+
+.Medical_rwapper:hover {
+  border: 1px solid white;
+}
+
+.Medical_rwapper p {
+  text-decoration: none;
+}
+
+.medical_paragraphe a,
+select,
+option {
+  background-color: #232f3e;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.groceries_rwapper {
+  display: flex;
+  align-items: center;
+}
+.groceries_rwapper:hover {
+  border: 1px solid white;
+}
+
+.bestseller_rwapper {
+  display: flex;
+  align-items: center;
+}
+
+.bestseller_rwapper:hover {
+  border: 1px solid white;
+}
+
+.bestseller_rwapper a {
+  text-decoration: none;
+  color: white;
+}
+
+.amazonbasics_rwapper {
+  display: flex;
+  align-items: center;
+}
+
+.amazonbasics_rwapper:hover {
+  border: 1px solid white;
+}
+.amazonbasics_rwapper a {
+  text-decoration: none;
+  color: white;
+}
+
+.prim_rwapper {
+  display: flex;
+  align-items: center;
+}
+
+.prim_rwapper:hover {
+  border: 1px solid white;
+}
+
+.newreleases_rwapper {
+  display: flex;
+  align-items: center;
+}
+
+.newreleases_rwapper:hover {
+  border: 1px solid white;
+}
+
+.newreleases_rwapper a {
+  text-decoration: none;
+  color: white;
+}
+
+.todaysdeals_rwapper:hover {
+  border: 1px solid white;
+}
+
+.todaysdeals_rwapper a {
+  text-decoration: none;
+  color: white;
+}
+
+.todaysdeals_rwapper {
+  display: flex;
+  align-items: center;
+}
+
+.todaysdeals_rwapper a {
+  text-decoration: none;
+  color: white;
+}
+
+.customer_rwapper {
+  display: flex;
+  align-items: center;
+}
+
+.customer_rwapper:hover {
+  border: 1px solid white;
+}
+
+.customer_rwapper a {
+  text-decoration: none;
+  color: white;
+}
+
+.music_rwapper {
+  display: flex;
+  align-items: center;
+}
+
+.music_rwapper:hover {
+  border: 1px solid white;
+}
+
+.music_rwapper a {
+  text-decoration: none;
+  color: white;
+}
+
+.registry_rwapper {
+  display: flex;
+  align-items: center;
+}
+
+.registry_rwapper:hover {
+  border: 1px solid white;
+}
+
+.registry_rwapper a {
+  text-decoration: none;
+  color: white;
+}
+
+.books_rwapper {
+  display: flex;
+  align-items: center;
+}
+
+.books_rwapper:hover {
+  border: 1px solid white;
+}
+
+.books_rwapper a {
+  text-decoration: none;
+  color: white;
+}

@@ -1,10 +1,12 @@
-
-import './App.css';
+import Header from "./components/Header/Header";
+import "./App.css";
+import SecondHeader from "./components/lowerHeader/SecondHeader";
 
 function App() {
   return (
-    < div>
-  
+    <div>
+      <Header />
+      <SecondHeader />
     </div>
   );
 }

@@ -4,10 +4,12 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "inherit", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
 }
 .outer_wrapper {
-  height: 70px;
+  height: 60px;
   display: flex;
   gap: 10px;
   align-items: center;
@@ -59,7 +61,7 @@ body {
   align-items: center;
   background-color: #febd69;
   color: #111;
-  padding: 8px;
+  padding: 10px;
   overflow: hidden;
   border: none;
   cursor: pointer;
@@ -127,8 +129,6 @@ option {
 }
 .search_bar_1 {
   display: flex;
-  margin: -1px;
-  height: auto;
   padding: 11px;
   background-color: white;
   border: none;
@@ -172,7 +172,7 @@ option {
 }
 .account_options,
 select {
-  background-color: #131921;
+  background-color: #111;
   color: #fff;
   border: none;
 }
