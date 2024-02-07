@@ -1,5 +1,5 @@
 import React from "react";
-import "./SecondHeader.css";
+import "./Header.css";
 import { LuMenu } from "react-icons/lu";
 
 function SecondHeader() {
