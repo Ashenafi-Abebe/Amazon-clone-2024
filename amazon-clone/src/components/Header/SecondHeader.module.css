@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "inherit", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.Lower_Outer_Wrapper {
+  height: 39px;
+  display: flex;
+  gap: 15px;
+  justify-items: center;
+  background-color: #232f3e;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding-left: 20px;
+  float: none;
+}
+
+.menu_Wrapper {
+  display: flex;
+  align-items: center;
+}
+.menu_Wrapper:hover {
+  border: 1px solid white;
+}
+.menu_Icon {
+  color: white;
+  text-decoration: none;
+}
+
+.lower_All_Wrapper {
+  display: flex;
+  text-decoration: none;
+}
+.lower_All_Wrapper a {
+  text-decoration: none;
+  color: #fff;
+}
+.Valentine_rwapper {
+  display: flex;
+}
+
+.Valentine_Wrapper p {
+  color: white;
+  margin-right: 3px;
+  align-items: center;
+}
+.Valentine_Wrapper:hover {
+  border: 1px solid white;
+}
+
+.Valentine_Wrapper a {
+  text-decoration: none;
+}
+
+.Medical_Wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.Medical_Wrapper:hover {
+  border: 1px solid white;
+}
+
+.Medical_Wrapper p {
+  text-decoration: none;
+}
+
+.Medical_Wrapper select,
+option {
+  background-color: #232f3e;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.m .medical_Paragraph Link,
+p {
+  background-color: #232f3e;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+
+.Groceries_Wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.Groceries_Wrapper select,
+option {
+  background-color: #232f3e;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.Groceries_Wrapper:hover {
+  border: 1px solid white;
+}
+
+.Bestseller_Wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.Bestseller_Wrapper:hover {
+  border: 1px solid white;
+}
+
+.Bestseller_Wrapper a {
+  text-decoration: none;
+  color: white;
+}
+
+.amazonbasics_rwapper {
+  display: flex;
+  align-items: center;
+}
+
+.amazonBasics_Wrapper:hover {
+  border: 1px solid white;
+}
+.amazonBasics_Wrapper a {
+  text-decoration: none;
+  color: white;
+}
+
+.prim_rwapper {
+  display: flex;
+  align-items: center;
+}
+
+.prime_Wrapper select,
+option {
+  background-color: #232f3e;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.prime_Wrapper:hover {
+  border: 1px solid white;
+}
+
+.newReleases_Wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.newReleases_Wrapper:hover {
+  border: 1px solid white;
+}
+
+.newReleases_Wrapper a {
+  text-decoration: none;
+  color: white;
+}
+
+.todaysDeals_Wrapper:hover {
+  border: 1px solid white;
+}
+
+.todaysDeals_Wrapper a {
+  text-decoration: none;
+  color: white;
+}
+
+.todaysdeals_rwapper {
+  display: flex;
+  align-items: center;
+}
+
+.todaysdeals_rwapper a {
+  text-decoration: none;
+  color: white;
+}
+
+.customerService_Wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.customerService_Wrapper:hover {
+  border: 1px solid white;
+}
+
+.customerService_Wrapper a {
+  text-decoration: none;
+  color: white;
+}
+
+.music_Wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.music_Wrapper:hover {
+  border: 1px solid white;
+}
+
+.music_Wrapper a {
+  text-decoration: none;
+  color: white;
+}
+
+.registry_Wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.registry_Wrapper:hover {
+  border: 1px solid white;
+}
+
+.registry_Wrapper a {
+  text-decoration: none;
+  color: white;
+}
+
+.books_Wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.books_Wrapper:hover {
+  border: 1px solid white;
+}
+
+.books_Wrapper a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 576px) {
+  .Lower_Outer_Wrapper {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}

@@ -1,11 +1,10 @@
-import Header from "./components/Header/Header";
 import "./App.css";
-import SecondHeader from "./components/Header/SecondHeader";
+import Routing from "./Router";
+
 function App() {
   return (
     <div>
-      <Header />
-      <SecondHeader />
+      <Routing />
     </div>
   );
 }
