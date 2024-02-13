@@ -1,113 +1,108 @@
-import React from "react";
-import "./Header.css";
+import React, { useContext } from "react";
 import { SlLocationPin } from "react-icons/sl";
 import { AiOutlineSearch } from "react-icons/ai";
-import { PiShoppingCartSimpleBold } from "react-icons/pi";
+import { Link } from "react-router-dom";
+import { BiCart } from "react-icons/bi";
+import { DataContext } from "../DataProvider/DataProvider";
+import classes from "./Header.module.css";
+import SecondHeader from "./SecondHeader";
+
 function Header() {
+  const [{ basket }, dispatch] = useContext(DataContext);
+  const totalItem = basket?.reduce((amount, item) => item.amount + amount, 0);
+
   return (
-    <>
-      <section className="outer_wrapper">
-        <div className="logo_seaction">
-          {/* {logo} */}
-          <div className="log_wrapper">
-            <a href="/">
-              <img
-                className="log_image"
-                src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
-                alt="Amazon logo"
-              />
-            </a>
-          </div>
-          <div className="delivery_section">
-            <span>
-              <p className="delivert_p">Delevery to</p>
-              {<SlLocationPin />}USA
-            </span>
-          </div>
+    <section className={classes.fixed}>
+      <section className={classes.outer_wrapper}>
+        <div className={classes.logo_section}>
+          <Link to="/">
+            <img
+              className={classes.logo_image}
+              src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
+              alt="Amazon logo"
+            />
+          </Link>
         </div>
-        {/* search */}
+        <div className={classes.delivery_section}>
+          <span>
+            <p className={classes.delivery_p}>Delivery to</p>
+            <SlLocationPin aria-label="Location Pin Icon" />
+            USA
+          </span>
+        </div>
 
-        <div className="searchbar_wrapper">
-          <div className="all_section">
+        <div className={classes.AllSection_OuterWrapper}>
+          <div className={classes.all_section}>
             <select name="" id="">
-              <option value="/">All</option>
+              <option value="ALL">ALL</option>
             </select>
           </div>
-          <div className="search_bar_1">
-            <input type="text" name="" id="" placeholder="Search Amazon" />
+          {/* Search bar */}
+          <div className={classes.searchbar_wrapper}>
+            <input
+              type="text"
+              placeholder="Search Amazon"
+              className={classes.search_input}
+            />
           </div>
-          <div className="search"> {<AiOutlineSearch />}</div>
+          <div className={classes.Search_Icon}>
+            {" "}
+            <AiOutlineSearch aria-label="Search Icon" size={32} />
+          </div>
         </div>
-        <div className="flag_and_En_wrapper">
-          <div>
-            <a href="/">
+
+        <div className={classes.flag_and_En_wrapper}>
+          <div className={classes.flag}>
+            <Link to="/">
               <img
-                className="flag"
                 src="https://pngimg.com/uploads/flags/flags_PNG14592.png"
-                alt="usa flag"
+                alt="USA flag"
               />
-            </a>
-          </div>{" "}
-          <div className="en_option">
-            <select name="" id="">
-              <option value="EN">EN</option>
-            </select>
-          </div>{" "}
-        </div>
-        <div className="account_rwapper">
-          {" "}
-          <div class="Account_Wrapper">
-            <a href="/" className="account_link">
-              <div className="inner_account">
-                <div className="account_greeting">
-                  <p>Hello, sign in</p>
-                </div>
-                <p className="account_options">
-                  Account & List <select name="/" id="/"></select>
-                </p>
-              </div>
-            </a>
-          </div>
-          <div className="return_wrapper">
-            <div className="inner_retuns_wrapper">
+            </Link>
+            <div className={classes.En_wrapper}>
               {" "}
-              <div className="return_orders">
-                <div className="returns">
-                  <a href="/">
-                    {" "}
-                    <p>Returns</p>
-                  </a>
-                </div>
-
-                <div className="orders">
-                  <a href="/">
-                    <p> & Orders</p>{" "}
-                  </a>
-                </div>
-              </div>
-              <div className="cart_rwapper">
-                <div>
-                  <a href="/">
-                    {" "}
-                    <p className="zero_value">
-                      <span>0</span>
-                    </p>
-                  </a>
-                </div>
-                <div className="cart_icon">
-                  {" "}
-                  <span>{<PiShoppingCartSimpleBold size={35} />}</span>
-                </div>
-
-                <div className="cart">
-                  <p>Cart</p>
-                </div>
-              </div>
+              <select name="" id="">
+                <option value="">EN</option>
+              </select>
             </div>
           </div>
         </div>
+
+        <div className={classes.account_wrapper}>
+          <div className={classes.account_link}>
+            <Link to="/">
+              <p>Hello, sign in</p>
+              <span>Account & Lists</span>
+            </Link>
+          </div>
+
+          <div className={classes.return_wrapper}>
+            <Link to="/orders">
+              <p>Returns</p>
+              <span>& Orders</span>
+            </Link>
+          </div>
+
+          <div className={classes.cart_wrapper}>
+            <Link to="/cart">
+              <div className={classes.ziro}>
+                {" "}
+                <span>{totalItem}</span>
+              </div>
+
+              <div className={classes.cart_icon}>
+                <BiCart size={35} aria-label="Cart Icon" />
+              </div>
+
+              <div className={classes.cart_p}>
+                <p>Cart</p>
+              </div>
+            </Link>
+          </div>
+        </div>
       </section>
-    </>
+      <SecondHeader />
+    </section>
   );
 }
 
