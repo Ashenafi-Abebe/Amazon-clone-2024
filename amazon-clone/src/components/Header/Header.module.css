@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: "inherit", sans-serif;
@@ -65,70 +66,44 @@ img {
   border: 1px solid white;
 }
 
-.AllSection_OuterWrapper {
+.delivery_section span,
+p {
+  color: #fff;
+}
+
+.search {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: 60%; */
-  margin-left: 10px;
-  flex: 1px;
-  border-radius: 5px;
-}
-.AllSection_OuterWrapper:focus {
-  outline: none;
-}
-.AllSection_OuterWrapper:focus-within {
-  border: 2px solid #e39127;
-}
-.searchbar_wrapper {
-  background-color: #fff;
-  align-items: center;
-  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
   width: 100%;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  /* border-radius: 5px; */
+  flex: 1;
 }
-.all_section {
-  max-width: 70px;
-  background-color: #ccc;
-  border: none;
-  border-radius: 2px;
-}
-.all_section select,
-option {
-  background-color: #ccc;
-  color: hsl(0, 3%, 34%);
+.search select {
+  padding: 11px;
   font-weight: bold;
-  cursor: pointer;
+  outline: 1px solid white;
+  background-color: #ccc;
+  color: #111;
+}
+.search input {
   padding: 10px;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  /* border-radius: 1px; */
-}
-.search_input {
+  font-weight: bold;
+  outline: 1px solid white;
   width: 100%;
-  padding: 10.3px;
-  text-decoration: none;
+  border: 1px solid white;
+}
+.search select {
   border: none;
-  align-items: center;
-  justify-content: center;
-  /* border-radius: 1px; */
 }
 
-.search_input:focus {
-  outline: none;
+.search svg {
+  padding: 7px;
+  background-color: #d49644;
 }
-
-.Search_Icon {
-  background-color: #febd69;
-  align-items: center;
-  justify-content: center;
-  border-radius: 1px;
-  padding: 0.6px;
+.search:focus-within {
+  border: 2px solid #d49644;
 }
 
 .flag {
@@ -194,13 +169,18 @@ option {
 }
 
 .account_link option,
-span {
+.span {
   color: white;
   background-color: #131921;
 }
 
 .account_link a {
   text-decoration: none;
+}
+
+.account_link span,
+p {
+  color: white;
 }
 
 .account_options,
@@ -243,16 +223,18 @@ select {
   display: flex;
   cursor: pointer;
   margin-top: 15px;
-  padding-bottom: 3px;
+  padding-bottom: 10px;
 }
 
 .cart_icon {
   position: absolute;
+  padding-top: 6px;
   color: #fff;
 }
 
 .ziro span {
   margin-left: 15px;
+
   font-weight: bolder;
   position: absolute;
   color: orange;
@@ -271,10 +253,9 @@ select {
 }
 .cart_p {
   margin-left: 40px;
-  margin-top: 8px;
+  margin-top: 15px;
   text-decoration: none;
 }
-
 .cart_wrapper:hover {
   border: 1px solid white;
 }
@@ -293,10 +274,6 @@ a {
     flex-direction: column;
     height: auto;
   }
-}
-
-.language {
-  display: none;
 }
 
 /* THE LOWER HEADER STARTING HERE */
